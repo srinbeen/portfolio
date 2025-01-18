@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+  .collection-item {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: antiquewhite;
+    margin: 2px;
+
+    border-radius: 5px;
+  }
+
+  .thumbnail {
+    background-color:bisque;
+    margin: 4px;
+    padding: 4px;
+
+    max-width: fit-content;
+    max-height: 64px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    min-width: 25vw;
+
+    margin: 4px;
+    padding: 4px;
+    
+  }
+  
+  .title {
+    margin: 2px;
+    padding: 2px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-weight: bold;
+  }
+  
+  .artist {
+    background-color:bisque;
+    margin: 2px;
+    padding: 2px;
+    
+    font-style: italic;
+  }
