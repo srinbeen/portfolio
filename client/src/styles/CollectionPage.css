@@ -8,12 +8,27 @@
     right: 2vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     background-color: antiquewhite;
-    margin: 2px;
+    padding: 4px;
 
-    border-radius: 5px;
+    border-radius: 4px;
+
+    width: 25vw;
+  }
+
+  .none {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+
+    margin: 2px;
+    padding: 2px;
   }
 
   .thumbnail {
@@ -21,26 +36,21 @@
     margin: 4px;
     padding: 4px;
 
-    max-width: fit-content;
-    max-height: 64px;
+    width: 64px;
+    height: 64px;
   }
   
-  .header {
+  .header-info {
     display: flex;
     flex-direction: column;
 
     flex: 1;
-
-    min-width: 25vw;
-
-    margin: 4px;
-    padding: 4px;
+    justify-content: center;
     
   }
   
   .title {
-    margin: 2px;
-    padding: 2px;
+    padding: 4px;
     
     white-space: nowrap;
     overflow: hidden;
@@ -51,8 +61,15 @@
   
   .artist {
     background-color:bisque;
-    margin: 2px;
-    padding: 2px;
+    padding: 4px;
+    
+    font-style: italic;
+  }
+
+  .tracks {
+    background-color:bisque;
+    margin: 4px;
+    padding: 4px;
     
     font-style: italic;
   }
