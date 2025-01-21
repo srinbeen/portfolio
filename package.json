@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "vite --config client/vite.config.js",
+    "dev:server": "nodemon server/server.js",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --config client/vite.config.js",
+    "build:server": "node server/server.js",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "vite": "^6.0.10"
+  }
+}
