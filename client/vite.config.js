@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../server/dist' // Output the build to the server directory
+    outDir: '../server/dist', // Output the build to the server directory
+    rollupOptions: {
+      input: './client/index.html', // Explicitly set the entry file
+    },
   }
 })
