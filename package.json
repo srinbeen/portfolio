@@ -7,7 +7,7 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite --config client/vite.config.js",
     "dev:server": "nodemon server/server.js",
-    "build": "npm run build:client && npm run build:server",
+    "build": "npm install && npm run build:client && npm run build:server",
     "build:client": "vite build --config client/vite.config.js",
     "build:server": "node server/server.js",
     "start": "node server/server.js"
