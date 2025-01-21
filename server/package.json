@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "node server.js"
+    "build": "npm install && node server.js"
   },
   "type": "module",
   "keywords": [],
@@ -17,7 +17,6 @@
   "dependencies": {
     "disconnect": "^1.2.2",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "portfolio": "file:.."
+    "express": "^4.21.2"
   }
 }
